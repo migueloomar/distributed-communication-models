@@ -91,6 +91,7 @@ Extiende el sistema anterior con principios de RMI:
 
 ## 📁 Organización
 
+```text
 distributed-communication-models/
 ├── pubsub_kafka_mysql/
 ├── rpc_xml/
@@ -100,6 +101,8 @@ distributed-communication-models/
 ├── socket_p2p_udp/
 ├── socket_udp_basico_c/
 └── README.md
+```
+
 
 ---
 
