@@ -23,8 +23,8 @@ Este repositorio contiene implementaciones prácticas de varios modelos de comun
 **Cliente-Servidor para Conversión de Unidades (Longitud)**  
 Basado en **XML-RPC sobre HTTP**.
 
-- **Servidor:** Expone método `convertir(valor, unidad_origen, unidad_destino)`.
-- **Cliente:** Invoca remotamente el método como si fuera local.
+- **servidor.py:** Expone método `convertir(valor, unidad_origen, unidad_destino)`.
+- **cliente.py:** Invoca remotamente el método como si fuera local.
 
 ---
 
@@ -39,7 +39,7 @@ Extiende el sistema anterior con principios de RMI:
 
 ---
 
-## 🧷 4. Socket TCP en C
+## 🧷 4. Socket en C
 
 **Cliente y Servidor TCP usando sockets BSD en C**
 
@@ -69,8 +69,8 @@ Extiende el sistema anterior con principios de RMI:
 
 **Comunicación entre pares usando UDP (Python)**
 
-- `cliente_p2p.py`: Envia mensajes a otro peer.
-- `servidor_p2p.py`: Recibe y responde interactivamente.
+- `client.py`: Envia mensajes a otro peer.
+- `server.py`: Recibe y responde interactivamente.
 
 **Características:**
 - Comunicación directa sin servidor
@@ -82,8 +82,8 @@ Extiende el sistema anterior con principios de RMI:
 
 **Implementación básica de cliente-servidor UDP**
 
-- `cliente_udp.c`: Envía mensaje al servidor (localhost:12345).
-- `servidor_udp.c`: Escucha en puerto 12345 y muestra mensajes recibidos.
+- `client.c`: Envía mensaje al servidor (localhost:12345).
+- `server.c`: Escucha en puerto 12345 y muestra mensajes recibidos.
 
 **Modelo sin conexión:** Utiliza `sendto()` y `recvfrom()`.
 
@@ -93,13 +93,13 @@ Extiende el sistema anterior con principios de RMI:
 
 ```text
 distributed-communication-models/
-├── pubsub_kafka_mysql/
-├── rpc_xml/
-├── rmi_xmlrpc/
-├── socket_tcp_c/
-├── socket_multicast_udp/
-├── socket_p2p_udp/
-├── socket_udp_basico_c/
+├── mod pub-sub/
+├── rpc_units/
+├── rpc_units-rmi/
+├── socket_c/
+├── socket_multicast/
+├── socket_p2p/
+├── socket_udp/
 └── README.md
 ```
 
